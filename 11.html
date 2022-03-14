@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1#0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Form</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <form id="main">
+        <h1>Student Registeration Form</h1>
+        <p id="line">
+
+        <div class="labels">
+            <label>Firstname</label>
+            <input id="form" type="text" name="firstname" required placeholder="Firstname">
+        </div>
+
+        <div class="labels">
+            <label>Middlename</label>
+            <input id="form" type="text" name="middlename" required placeholder="Middlename">
+        </div>
+
+        <div class="labels">
+            <label>Lastname</label>
+            <input id="form" type="text" name="lastname" required placeholder="Lastname">
+        </div>
+
+
+        <div class="labels">
+            <label>Course:</label>
+            <select required>
+                <option>Course</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JS</option>
+            </select>
+        </div>
+
+        <div class="labels">
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="other">other
+            
+        </div>
+          
+        <div class="labels">
+            <label>Phone:</label>
+            <input id="form" type="number" min="0" required placeholder="+93">
+            <input id="retype" type="number" min="0" required placeholder="Phone Number">
+        </div>
+
+        <div class="labels">
+            <label>Current Address:</label>
+            <textarea id="textarea" name="adress" required placeholder="current Adress"></textarea>
+        </div>
+
+        <div class="labels">
+            <label>Email</label>
+            <input id="form" type="email" name="email" required placeholder="Enter Email">
+        </div>
+
+        <div class="labels">
+            <label>Password</label>
+            <input id="form" type="password" min="0" max="999"  pattern="^(?=.*[A-Za-z])(?=.*[A-Za-z\d]{8,}$" name="pwd" required placeholder="Enter Password">
+        </div>
+
+        <div class="labels">
+            <label>Re-type Password</label>
+            <input id="form" type="password" name="pwd" required placeholder="Retype Password">
+        </div>
+
+        <div class="labels">
+            <input id="submit" type="submit" value="Register">
+        </div>
+    </form>
+</body>
+</html>
+
